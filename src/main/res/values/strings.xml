@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Repeat the sequence</string>
+    <string name="btn_one_text">One</string>
+    <string name="btn_two_text">Two</string>
+    <string name="btn_three_text">Three</string>
+    <string name="btn_four_text">Four</string>
+    <string name="next_turn">Next turn</string>
+    <string name="level">Level:</string>
+    <string name="_1">1</string>
+    <string name="best_result">Best result: </string>
+    <string name="bestResult_default_value">0</string>s
+    <string name="menu_main_title">Menu</string>
+    <string name="game_conditions_textValue">The interface consists of four buttons. When the button is pressed, a short sound is heard. Each button has its own sound, 4 different sounds. At the beginning of the game, the app plays the first sound. Then the user has to repeat it. If the correct button is pressed, then the next random sound is added to the sequence (the previous elements of this sequence remain the same), the sounds are played with a slight delay. If the player has entered all the sounds of the sequence correctly on the level, the level changes, so it will be until the first error. After that, you can return to the menu, or start over. The best result is saved.</string>
+    <string name="game_conditions_textKey">Game conditions:</string>
+    <string name="about_author_textKey">About author:</string>
+    <string name="author_textValue">sfleta, s21 student</string>
+    <string name="github_link_description_textValue">github.com/jenich91</string>
+    <string name="author_pixel_image">author_pixel_image</string>
+    <string name="new_game_button_textValue">New game</string>
+    <string name="about_textValue">About</string>
+    <string name="free_mode_textValue">Free mode</string>
+    <string name="soundThemeSpinnerDescription">"drums", "animals", "notes"</string>
+    <string name="sound">Sound:</string>
+    <string name="togglebuttonTextKey">ToggleButton</string>
+    <string name="delayTextKey">Delay:</string>
+    <string name="settings_textValue">Settings</string>
+    <string name="github_textKey">Visit my github:</string>
+    <string name="sound_theme_textValue">Theme:</string>
+    <string name="hardmode_TextKey">HardMode:</string>
+</resources>

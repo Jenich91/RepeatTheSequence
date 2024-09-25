@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameFragment">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="10"
+            android:layout_gravity="center"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:columnCount="2"
+            android:orientation="horizontal"
+            android:useDefaultMargins="true"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <Button
+                style="@style/ButtonStyle"
+                android:id="@+id/btn_one"
+                android:backgroundTint="#39a0ca"
+                android:onClick="btnClickHandler"
+                android:text="@string/btn_one_text" />
+
+            <Button
+                style="@style/ButtonStyle"
+                android:id="@+id/btn_two"
+                android:backgroundTint="#f95d9b"
+                android:onClick="btnClickHandler"
+                android:text="@string/btn_two_text" />
+
+            <Button
+                style="@style/ButtonStyle"
+                android:id="@+id/btn_three"
+                android:backgroundTint="#478559"
+                android:onClick="btnClickHandler"
+                android:text="@string/btn_three_text" />
+
+            <Button
+                style="@style/ButtonStyle"
+                android:id="@+id/btn_four"
+                android:backgroundTint="#ff414e"
+                android:onClick="btnClickHandler"
+                android:text="@string/btn_four_text" />
+
+            <Button
+                style="@style/ButtonStyleWide"
+                android:id="@+id/btn_start_game"
+                android:backgroundTint="#ff8928"
+                android:onClick="nextTurn"
+                android:text="@string/next_turn" />
+        </GridLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                style="@style/TextViewStyle"
+                android:id="@+id/LevelKey"
+                android:text="@string/level" />
+
+            <TextView
+                style="@style/TextViewStyle"
+                android:id="@+id/LevelValue"
+                android:text="@string/_1" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                style="@style/TextViewStyle"
+                android:id="@+id/BestResultKey"
+                android:text="@string/best_result" />
+
+            <TextView
+                style="@style/TextViewStyle"
+                android:id="@+id/BestResultValue"
+                android:layout_marginEnd="10dp"
+                android:text="@string/bestResult_default_value" />
+    </LinearLayout>
+
+</FrameLayout>

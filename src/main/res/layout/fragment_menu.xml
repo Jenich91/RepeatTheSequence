@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuFragment">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="10"
+        android:layout_gravity="center"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:columnCount="2"
+        android:orientation="vertical"
+        android:useDefaultMargins="true"
+        tools:ignore="MissingConstraints,UselessParent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <Button
+            style="@style/ButtonStyle"
+            android:id="@+id/btn_new_game"
+            android:backgroundTint="@color/green"
+            android:text="@string/new_game_button_textValue" />
+
+        <Button
+            style="@style/ButtonStyle"
+            android:id="@+id/btn_free_mode"
+            android:backgroundTint="@color/teal"
+            android:text="@string/free_mode_textValue" />
+
+        <Button
+            style="@style/ButtonStyle"
+            android:id="@+id/btn_settings"
+            android:backgroundTint="@color/blue"
+            android:text="@string/settings_textValue" />
+
+        <Button
+            style="@style/ButtonStyle"
+            android:id="@+id/btn_about"
+            android:backgroundTint="@color/light_blue"
+            android:text="@string/about_textValue" />
+
+    </GridLayout>
+
+</FrameLayout>

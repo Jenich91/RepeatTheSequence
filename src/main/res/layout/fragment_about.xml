@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="25dp">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="10"
+            android:layout_gravity="top"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:columnCount="1"
+            android:orientation="vertical"
+            android:useDefaultMargins="true"
+            tools:ignore="MissingConstraints,UselessParent"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="25dp"
+                android:gravity="top"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    style="@style/TextViewStyleAbout"
+                    android:id="@+id/gameConditionsKey"
+                    android:text="@string/game_conditions_textKey" />
+
+                <TextView
+                    android:id="@+id/gameConditionsValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:text="@string/game_conditions_textValue"
+                    tools:ignore="RtlSymmetry,VisualLintLongText" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="25dp"
+                android:gravity="top"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    style="@style/TextViewStyleAbout"
+                    android:id="@+id/BestResultKey"
+                    android:text="@string/best_result" />
+
+                <TextView
+                    android:id="@+id/BestResultValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bestResult_default_value" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables">
+
+                <TextView
+                    android:id="@+id/aboutAuthorKey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/about_author_textKey" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="220dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="@dimen/text_view_margin"
+                    android:contentDescription="@string/author_pixel_image"
+                    android:src="@drawable/_sfleta_icon" />
+
+                <TextView
+                    android:id="@+id/aboutAuthorValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/text_view_margin"
+                    android:text="@string/author_textValue" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="25dp"
+                android:gravity="top"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    style="@style/TextViewStyleAbout"
+                    android:id="@+id/githubLinkKey"
+                    android:text="@string/github_textKey" />
+
+                <TextView
+                    android:id="@+id/githubLinkValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:autoLink="web"
+                    android:linksClickable="true"
+                    android:text="@string/github_link_description_textValue"
+                    android:textColor="#00838F" />
+            </LinearLayout>
+
+        </GridLayout>
+    </androidx.core.widget.NestedScrollView>
+</FrameLayout>
